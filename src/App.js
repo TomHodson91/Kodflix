@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import logo from './harryPotterAndTheGobletOfFire.jpg';
 import logo1 from './breakingBad.jpg';
 import logo2 from './doctorWho.png';
@@ -10,30 +11,18 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
 
       <div className="row">
-        <div class="column"> 
-          <img src={logo} alt="logo" />
-        </div>
-        <div class="column">
-          <img src={logo1} alt="logo1" />
-        </div>
-        <div class="column">
-          <img src={logo2} alt="logo2" />
-        </div>
+        <div className="item"> <img className="column" src={logo} alt="" /></div>
+        <div className="item"> <img className="column" src={logo1} alt="" /></div>
+        <div className="item"> <img className="column" src={logo2} alt="" /></div>
       </div>
 
-      <div class="row">
-      <div class="column">
-          <img src={logo3} alt="logo3" />
-        </div>
-        <div class="column">
-          <img src={logo4} alt="logo4" />
-        </div>
-        <div class="column">
-          <img src={logo5} alt="logo5" />
-        </div>
+      <div className="row">
+        <div className="item"><img className="column" src={logo3} alt="" /></div>
+        <div className="item"><img className="column" src={logo4} alt="" /></div>
+        <div className="item"><img className="column" src={logo5} alt="" /></div>
       </div>
 
       </div>
