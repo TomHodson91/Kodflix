@@ -18,7 +18,7 @@ class App extends Component {
           <div className="item">
             <img className="column" src={logo} alt="" />
             <div className="overlay">
-              <div className="text">Harry Potter and the Goblet of Fire</div>
+              <div className="text">Harry Potter</div>
             </div>
           </div>
 
