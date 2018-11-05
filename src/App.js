@@ -13,17 +13,52 @@ class App extends Component {
     return (
       <div className="App">
 
-      <div className="row">
-        <div className="item"> <img className="column" src={logo} alt="" /></div>
-        <div className="item"> <img className="column" src={logo1} alt="" /></div>
-        <div className="item"> <img className="column" src={logo2} alt="" /></div>
-      </div>
+        <div className="row">
 
-      <div className="row">
-        <div className="item"><img className="column" src={logo3} alt="" /></div>
-        <div className="item"><img className="column" src={logo4} alt="" /></div>
-        <div className="item"><img className="column" src={logo5} alt="" /></div>
-      </div>
+          <div className="item">
+            <img className="column" src={logo} alt="" />
+            <div className="overlay">
+              <div className="text">Harry Potter and the Goblet of Fire</div>
+            </div>
+          </div>
+
+          <div className="item">
+            <img className="column" src={logo1} alt="" />
+            <div className="overlay">
+              <div className="text">Breaking Bad</div>
+            </div>
+          </div>
+
+          <div className="item">
+            <img className="column" src={logo2} alt="" />
+            <div className="overlay">
+              <div className="text">Doctor Who</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="item">
+            <img className="column" src={logo3} alt="" />
+            <div className="overlay">
+              <div className="text">Merlin</div>
+            </div>
+          </div>
+
+          <div className="item">
+            <img className="column" src={logo4} alt="" />
+            <div className="overlay">
+              <div className="text">Prison Break</div>
+            </div>
+          </div>
+
+          <div className="item">
+            <img className="column" src={logo5} alt="" />
+            <div className="overlay">
+              <div className="text">Westworld</div>
+            </div>
+          </div>
+        </div>
 
       </div>
     );
