@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 
 import logo from './harryPotterAndTheGobletOfFire.jpg';
@@ -8,61 +9,36 @@ import logo4 from './prisonBreak.jpg';
 import logo5 from './westWorld.jpg';
 import './App.css';
 
-class App extends Component {
+class Wavey extends React.Component {
   render() {
     return (
-      <div className="App">
-
-        <div className="row">
-
-          <div className="item">
-            <img className="column" src={logo} alt="" />
-            <div className="overlay">
-              <div className="text">Harry Potter</div>
-            </div>
-          </div>
-
-          <div className="item">
-            <img className="column" src={logo1} alt="" />
-            <div className="overlay">
-              <div className="text">Breaking Bad</div>
-            </div>
-          </div>
-
-          <div className="item">
-            <img className="column" src={logo2} alt="" />
-            <div className="overlay">
-              <div className="text">Doctor Who</div>
-            </div>
-          </div>
+      <div className="item" >
+        <img className="column" src={this.props.source} alt="" />
+        <div className="overlay">
+          <div className="text">{this.props.name}</div>
         </div>
-
-        <div className="row">
-          <div className="item">
-            <img className="column" src={logo3} alt="" />
-            <div className="overlay">
-              <div className="text">Merlin</div>
-            </div>
-          </div>
-
-          <div className="item">
-            <img className="column" src={logo4} alt="" />
-            <div className="overlay">
-              <div className="text">Prison Break</div>
-            </div>
-          </div>
-
-          <div className="item">
-            <img className="column" src={logo5} alt="" />
-            <div className="overlay">
-              <div className="text">Westworld</div>
-            </div>
-          </div>
-        </div>
-
       </div>
     );
   }
 }
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <div className="Row">
+          <Wavey source={logo} name='Harry Potter' />
+          <Wavey source={logo1} name='Breaking Bad' />
+          <Wavey source={logo2} name='Doctor Who' />
+        </div>
 
+        <div className="Row">
+          <Wavey source={logo3} name='Merlin' />
+          <Wavey source={logo4} name='Prison Break' />
+          <Wavey source={logo5} name='Westworld' />
+        </div>
+      </div>
+    );
+
+  }
+}
 export default App;
