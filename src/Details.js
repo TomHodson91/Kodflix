@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
+import tvShowDetails from './gallery-get.js'
 
 export default class Details extends Component {
    constructor() {
     super();
-    this.state = {
-        message: 'Hello, this will be the details page for each Movie and TV show :)'
-    }
+    this.state = {film: {}}
    }
 
-   componentDidMount(){
-    setTimeout(()=> {
-        this.setState({message: 'Coming soon! :)'})
-       },3000);
-   };
-   
-   render(){
+componentDidMount(){
+    this.setState({
+        film: tvShowDetails
+            .find(film => film.id === this.props.match.params.showPath)
+    });
+};
+
+render(){
     return (
-      <h2>{this.state.message}</h2>
+        <div>
+            <h1>{this.state.film.title}</h1>
+        </div>
     );
 }
 }
