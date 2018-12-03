@@ -8,7 +8,9 @@ export default function Gallery() {
         <div className="container">
         {
             tvShowDetails.map(show => (
-                <Item source={show.image} name={show.title} url={show.id} />
+                <Item 
+                  source={show.image} name={show.title} 
+                  url={show.id} key={show.id} />
             ))
         }
         </div>

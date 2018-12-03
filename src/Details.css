@@ -1,0 +1,39 @@
+.bg {
+    background-color: rgb(73, 73, 73);
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    background-color: rgb(105, 105, 105);
+    border-radius: 25px;
+}
+
+.contentContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.synopsis {
+    flex: 1;
+    padding: 30px;
+    left: 0;
+    width: 50%;
+    position: relative;
+    flex-basis: 110px;
+    background-color: rgb(105, 105, 105);
+    margin: 30px;
+    border-radius: 25px;
+}
+
+.image {
+    right: 0;
+    flex: 1;
+    padding: 30px;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    flex-basis: 350px;
+}
